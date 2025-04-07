@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+#panelizquierdo{
+    width: 52%;
+    height: 100%;
+    background-image: url(../img/inicio_sesion/photo-1532185922611-3410b1898a1c.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
