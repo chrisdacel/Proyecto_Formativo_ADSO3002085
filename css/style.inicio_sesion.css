@@ -11,7 +11,7 @@ display: flex;
 }
 
 #panelizquierdo{
-    width: 52vw;
+    width: 56vw;
     height: 100vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/inicio_sesion/photo-1532185922611-3410b1898a1c.jpg);
     background-size: cover;
@@ -19,12 +19,17 @@ display: flex;
     background-repeat: no-repeat;
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     
     
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .bienvenido{
     display: flex;
@@ -35,15 +40,40 @@ display: flex;
     
     font-family: 'Albert sans', sans-serif;
     font-size: 96px;
-    font-weight: 100;
+    font-weight:lighter;
     font-style: italic;
     line-height: 100px;
     letter-spacing: 0%;
     vertical-align: middle;
     
+    
+}
+h3{
+    margin: 0;
+}
+h3 b{
+    font-size: 30px;
+}
+
+#logo{
+    display: flex;
+    font-family: 'Albert sans', sans-serif;
+    gap: none;
+    flex-direction: column;
+    word-spacing: 0%;
+    margin: 0;
+    
+}
+#logoconteiner{
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+
 }
 #panelderecho{
-    width: 48vw;
+    width: 44vw;
     height: 100vh;
     background-color: rgb(252, 252, 252);
 }
@@ -55,7 +85,7 @@ display: flex;
     flex-direction: column;
     align-self: center;
     gap: 25px;
-    margin-top: 8vh;
+    margin-top: 15vh;
 }
 
 .iniciar{
@@ -78,11 +108,14 @@ display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     font-family: 'Albert sans', sans-serif;
+    
 }
 label{
     font-size: 0.8rem;
   color: #666;
   margin-bottom: 4px;
+  text-align: left;
+  
 }
 
 #correo{
@@ -95,7 +128,7 @@ label{
 }
 #ojoycont{
     display: flex;
-    gap: 35vw;
+    gap: 36vw;
 }
 #contraseña{
     width: 40vw;
@@ -124,17 +157,14 @@ a{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
+
     margin: 0 auto;
 
 }
 
 #ingresar{
-    width: 40vw;
-    height: 40px;
+    width: 41.3vw;
+    height: 5vh;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
@@ -145,6 +175,7 @@ a{
 #a_ingresar{
     display: flex;
     justify-self: center;
+    align-self: center;
     
 }
 
@@ -156,4 +187,13 @@ a{
     color: #666;
     font-family: 'Albert sans', sans-serif;
     font-size: 0.6rem;
+    text-align: center;
 }
+#contenedor_terminos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/svg" href="./img/inicio_sesion/nature-svgrepo-com.svg">
     <title>Conexión EcoRisaralda</title>
     <link rel="stylesheet" href="./css/style.inicio_sesion.css">
     
@@ -11,6 +12,12 @@
     <main class="principal">
     <div id="panelizquierdo" >
         <h1 class="bienvenido">Bienvenido de nuevo</h1>
+
+            <div id="logoconteiner">
+            <h3 id="logo"><b>Conexión</b></h3><br>
+                <h3> EcoRisaralda</h3>
+                </div>
+        
 
 
       
@@ -24,8 +31,10 @@
         <input id="correo" type="email" placeholder="Ingrese su correo">
         </div>
         <div class="input_label">
-           <div id="ojoycont"> <label for="password">Contraseña</label>
-            <img id="ojo" src="../Proyecto_Formativo_ADSO3002085/img/inicio_sesion/view-svgrepo-com.png" alt="Ojo de demostramiento"></div>
+            <div id="ojoycont"> 
+                <label for="password">Contraseña</label>
+                <img id="ojo" src="../Proyecto_Formativo_ADSO3002085/img/inicio_sesion/view-svgrepo-com.png" alt="Ojo de demostramiento">
+            </div>
             <input id="contraseña" type="password" placeholder="Ingrese su contraseña">
             <a href="#">¿Olvidaste tu contraseña?</a>
         </div>
@@ -33,11 +42,14 @@
             <button id="ingresar">Iniciar Sesión</button>
             <a id="a_ingresar" href="#">¿No tienes cuenta?</a>
         </div>
-        <!---
-        <p id="terminos" >Al iniciar sesión, aceptas nuestros <a href="#">Términos y condiciones</a> y nuestra <a href="#">Política de privacidad, por favor, revisalos cuidadosamente antes de continuar</a></p>
-    -->
+        
+        <div id="contenedor_terminos">
+            <p id="terminos" >Al iniciar sesión, aceptas nuestros</p> <a href="#">Términos y condiciones</a><p> y nuestra</p> <a href="#">Política de privacidad</a><p>, por favor, revisalos cuidadosamente antes de continuar</p>
+        </div>
+    
         </section>
     </div>
     </main>
+   
 </body>
 </html>
