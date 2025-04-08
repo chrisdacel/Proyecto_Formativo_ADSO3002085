@@ -1,15 +1,159 @@
 body{
     margin: 0;
     padding: 0;
+    
+
+}
+.principal{
+display: flex;
+
 
 }
 
 #panelizquierdo{
-    width: 52%;
-    height: 100%;
-    background-image: url(../img/inicio_sesion/photo-1532185922611-3410b1898a1c.jpg);
+    width: 52vw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/inicio_sesion/photo-1532185922611-3410b1898a1c.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    display: flex;
     
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bienvenido{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    text-align: center;
+    
+    font-family: 'Albert sans', sans-serif;
+    font-size: 96px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 100px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    
+}
+#panelderecho{
+    width: 48vw;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+}
+
+.conteiner{
+    
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-self: center;
+    gap: 25px;
+    margin-top: 8vh;
+}
+
+.iniciar{
+    font-family: 'Albert sans', sans-serif;
+    font-weight: 700;
+    color: #267E1B;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    display: flex;
+   justify-self: center;
+   align-self: center;
+    
+    
+
+}
+
+.input_label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-family: 'Albert sans', sans-serif;
+}
+label{
+    font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+#correo{
+    width: 40vw;
+    padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+#ojoycont{
+    display: flex;
+    gap: 35vw;
+}
+#contraseña{
+    width: 40vw;
+    padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+a{
+    margin-top: 6px;
+    font-size: 0.6rem;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+    align-self: flex-start;
+    font-family:'Albert sans', sans-serif;
+    font-weight: 800;
+}
+
+#ojo{
+    width: 20px;
+  height: 20px;
+}
+#align_button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+#ingresar{
+    width: 40vw;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    background-color:#267E1B;
+    color: white;
+    font-family:'Albert sans', sans-serif;
+}
+#a_ingresar{
+    display: flex;
+    justify-self: center;
+    
+}
+
+#terminos{
+
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    color: #666;
+    font-family: 'Albert sans', sans-serif;
+    font-size: 0.6rem;
 }
