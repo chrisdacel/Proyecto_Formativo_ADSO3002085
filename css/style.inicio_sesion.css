@@ -47,6 +47,7 @@ display: flex;
     vertical-align: middle;
     
     
+    
 }
 h3{
     margin: 0;
@@ -55,23 +56,23 @@ h3 b{
     font-size: 30px;
 }
 
+#logo-container{
+    margin-top: auto; /* empuja el logo hacia abajo */
+    padding-bottom: 40px; /* ajusta la distancia desde abajo */
+}
+
 #logo{
     display: flex;
-    font-family: 'Albert sans', sans-serif;
-    gap: none;
-    flex-direction: column;
-    word-spacing: 0%;
+    
     margin: 0;
+    width: 200px;
+    height: 100px;
+   text-align: center;
+    justify-self: center;
+    align-self: center;
     
 }
-#logoconteiner{
-    display: flex;
-    flex-direction: column;
-    
-    
-    align-items: center;
 
-}
 #panelderecho{
     width: 44vw;
     height: 100vh;
@@ -139,14 +140,14 @@ label{
   outline: none;
 }
 a{
-    margin-top: 6px;
+    
     font-size: 0.6rem;
     color: #666;
     text-decoration: underline;
     cursor: pointer;
-    align-self: flex-start;
+   
     font-family:'Albert sans', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #ojo{
@@ -172,6 +173,11 @@ a{
     color: white;
     font-family:'Albert sans', sans-serif;
 }
+#ingresar:hover{
+    background-color: rgb(30, 201, 30);
+    cursor: pointer;
+    
+}
 #a_ingresar{
     display: flex;
     justify-self: center;
@@ -182,18 +188,18 @@ a{
 #terminos{
 
     display: flex;
-    align-self: center;
-    justify-self: center;
+   
+    
     color: #666;
     font-family: 'Albert sans', sans-serif;
     font-size: 0.6rem;
     text-align: center;
+    justify-self: center;
+    align-self: center;
 }
-#contenedor_terminos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
+#terminos {
+    font-weight: 100;
 }
+
 
