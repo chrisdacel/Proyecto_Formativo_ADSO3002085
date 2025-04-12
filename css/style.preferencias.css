@@ -42,23 +42,63 @@ gap: 200px;
 margin-top: 100px;
 }
 .activity_containers{
-    width: 100px;
-    height: 100px;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
-    background: red;
+    
     display: flex;
     flex-direction: column;
-   
+    margin: 0;
     align-items: center;
     text-align: center;
- 
+    transition: ease-in-out 0.3s;
 
 
 }
-
+.activity_containers:hover{
+.activity_img{
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+}
+}
+.num1{
+    background-color: rgb(207, 199, 199);
+}
+.num2{
+    width: 113px;
+    height: 113px;
+    background-color: rgb(247, 187, 76);
+}
+.num3{
+    background-color: rgb(51, 194, 51);
+}
+.num4{
+    background-color: rgb(180, 95, 33);
+}
+.num5{
+    background-color: rgb(111, 177, 13);
+}
+.num6{
+background-color: rgba(206, 177, 115, 0.966);
+}
+.num7{
+    background-color: rgb(162, 240, 214);
+}
+.num8{
+    background-color: #1e6e13;
+}
 .activity_img{
     width: 150px;
     height: 150px;
+    transition: ease-in-out 0.5s;
+}
+
+.activity_name{
+font-family:'Albert sans', sans-serif ;
+color: #666;
+font-weight: 400;
+font-size: 11px;
 }
 #botones{
     width: 100vw;
@@ -80,6 +120,8 @@ font-family: 'Albert sans', sans-serif;
 font-weight: 800;
 width: 90px;
 height: 30px;
+margin-bottom: 25px;
+transition: ease-in-out 0.3s;
 }
 #omitir{
 margin-right: 150px;
@@ -90,4 +132,19 @@ font-weight: 800;
 color: #666;
 background-color: white;
 border: none;
+margin-bottom: 25px;
+transition: ease-in-out 0.5s;
+}
+
+#siguiente:hover{
+cursor: pointer;
+background-color: #267E1B;
+color: white;
+border: solid white 0.5px;
+}
+#omitir:hover{
+cursor: pointer;
+border-radius: 5px;
+border: solid #666 0.5px;
+
 }

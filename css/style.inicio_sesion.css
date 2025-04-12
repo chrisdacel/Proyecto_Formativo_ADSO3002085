@@ -35,12 +35,11 @@ display: flex;
     display: flex;
     align-self: center;
     justify-self: center;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
-    
     font-family: 'Albert sans', sans-serif;
     font-size: 96px;
-    font-weight:lighter;
+    font-weight:100;
     font-style: italic;
     line-height: 100px;
     letter-spacing: 0%;
@@ -57,8 +56,10 @@ h3 b{
 }
 
 #logo-container{
-    margin-top: auto; /* empuja el logo hacia abajo */
-    padding-bottom: 40px; /* ajusta la distancia desde abajo */
+    display: flex;
+    align-items: end;
+   
+    
 }
 
 #logo{
@@ -67,7 +68,7 @@ h3 b{
     margin: 0;
     width: 200px;
     height: 100px;
-   text-align: center;
+   
     justify-self: center;
     align-self: center;
     
@@ -153,6 +154,11 @@ a{
 #ojo{
     width: 20px;
   height: 20px;
+  transition: ease-in-out 0.3s;
+}
+#ojo:hover{
+    cursor: pointer;
+    
 }
 #align_button{
     width: 100%;
@@ -172,6 +178,7 @@ a{
     background-color:#267E1B;
     color: white;
     font-family:'Albert sans', sans-serif;
+    transition: ease-in-out 0.3s;
 }
 #ingresar:hover{
     background-color: rgb(30, 201, 30);
@@ -188,8 +195,7 @@ a{
 #terminos{
 
     display: flex;
-   
-    
+   text-indent: 3px;
     color: #666;
     font-family: 'Albert sans', sans-serif;
     font-size: 0.6rem;
