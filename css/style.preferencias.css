@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #267E1B;
+    font-family: 'Albert sans', sans-serif;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+#main_conteiner{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+   justify-content: center;
+    align-items: center;
+    
+}
+#first_row{
+margin-top: 50px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 200px;
+
+}
+#second_row{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 200px;
+margin-top: 100px;
+}
+.activity_containers{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+ 
+
+
+}
+
+.activity_img{
+    width: 150px;
+    height: 150px;
+}
+#botones{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 15px;
+    
+}
+
+#siguiente{
+background-color: white;
+color: #267E1B;
+border-radius: 5px;
+border: solid #267E1B 0.5px;
+font-family: 'Albert sans', sans-serif;
+font-weight: 800;
+width: 90px;
+height: 30px;
+}
+#omitir{
+margin-right: 150px;
+font-family: 'Albert sans', sans-serif;
+width: 90px;
+height: 30px;
+font-weight: 800;
+color: #666;
+background-color: white;
+border: none;
+}
