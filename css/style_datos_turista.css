@@ -7,7 +7,7 @@
 header{
     position: fixed;
     width: 100%;
-    height: 4rem;
+    height: 3.7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header{
     justify-self: center;
 }
 
-/* botones interactivos/parte derecha del encabezado*/
+
 
 #parte_derecha{
     display: flex;
@@ -111,8 +111,10 @@ main{
     justify-content: center;
     align-items: center;    
     gap: 20px;
+    
 }
 #titulo{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -124,6 +126,10 @@ main{
     color: #666;
     text-align: left;
 
+}
+#titulo a:hover{
+text-decoration: underline;
+cursor: pointer;
 }
 #titulo h1{
     color: #267E1B;
@@ -160,12 +166,65 @@ select{
     border: solid #666 0.5px;
     color: #666;
 }
+
+#align_date{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+#mes{
+    width: 17.5vw;
+}
+#dia{
+    width: 8vw;
+}
+#anio{
+    width: 8vw;
+}
 option{
     color: #666;
 
 }
+
+#caja{
+    width: 13px;
+    height: 13px;
+}
+#align_terminos{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    
+    
+}
+
+.terminos_container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+   margin-left: 32%;
+}
+.terminos{
+    font-size: 0.6rem;
+    display: flex;
+    align-self: center;
+    color: #666;
+    text-indent: 2px;
+}
+.terminos a{
+    color: #267E1B;
+    text-decoration: none;
+}
+.terminos a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 button{
-    width: 35vw;
+    width: 35.5vw;
     height: 40px;
     background-color: #267E1B;
     color: white;
