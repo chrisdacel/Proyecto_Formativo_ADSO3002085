@@ -1,3 +1,7 @@
+*{
+    font-family: 'Albert sans', sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -6,12 +10,12 @@ body{
 }
 .principal{
 display: flex;
-
+flex-direction: row;
 
 }
 
 #panelizquierdo{
-    width: 56vw;
+    width: 57vw;
     height: 100vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/inicio_sesion/photo-1532185922611-3410b1898a1c.jpg);
     background-size: cover;
@@ -22,6 +26,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     
     
     
@@ -47,6 +52,7 @@ display: flex;
     
     
     
+    
 }
 h3{
     margin: 0;
@@ -58,8 +64,21 @@ h3 b{
 #logo-container{
     display: flex;
     align-items: end;
+    font-weight: bolder; 
+    margin: 0;
+    align-self: center;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 0; 
    
     
+}
+#logo-container p{
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-self: center;
+    margin: 0;
 }
 
 #logo{
@@ -78,6 +97,10 @@ h3 b{
     width: 44vw;
     height: 100vh;
     background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteiner{
@@ -111,18 +134,23 @@ h3 b{
     margin-bottom: 1rem;
     font-family: 'Albert sans', sans-serif;
     
+    
+    
 }
 label{
     font-size: 0.8rem;
-  color: #666;
+  color: #444444;
   margin-bottom: 4px;
-  text-align: left;
+  display: flex;
   
 }
 
 #correo{
     width: 40vw;
-    padding: 12px;
+    height: 40px;
+    display: flex;
+    align-self: center;
+    color: #444444;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -130,11 +158,14 @@ label{
 }
 #ojoycont{
     display: flex;
-    gap: 36vw;
+    gap: 34vw;
 }
 #contraseña{
     width: 40vw;
-    padding: 12px;
+    height: 40px;
+    display: flex;
+    align-self: center;
+    color: #444444;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -143,7 +174,7 @@ label{
 a{
     
     font-size: 0.6rem;
-    color: #666;
+    color: #444444;
     text-decoration: underline;
     cursor: pointer;
    
@@ -164,14 +195,18 @@ a{
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    gap: 10px;
     margin: 0 auto;
 
 }
 
 #ingresar{
-    width: 41.3vw;
-    height: 5vh;
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
@@ -208,4 +243,135 @@ a{
     font-weight: 100;
 }
 
+@media(max-width:1286px){
+    #ojoycont{
+        gap: 33vw;
+    }
+}
+@media(max-width:1100px){
+    #ojoycont{
+        gap: 32.7vw;
+    }
+}
+@media(max-width:1000px){
+    #ojoycont{
+        gap: 32vw;
+    }
+}
+@media(max-width:906px){
+    #ojoycont{
+        gap: 30vw;
+    }
+}
+@media(max-width:905px){
+    #terminos{
+        font-size: 0.5rem;
+    }
+    #terminos a{
+        font-size: 0.5rem;
+    }
+}
+@media(max-width:874px){
+    #terminos{
+        font-size: 0.5rem;
+    }
+    #terminos a{
+        font-size: 0.5rem;
+    }
+    .bienvenido{
+        font-size: 85px;
+    }
+}
+@media(max-width:874px){
+    #terminos{
+        font-size: 0.4rem;
+    }
+    #terminos a{
+        font-size: 0.4rem;
+    }
+    .bienvenido{
+        font-size: 85px;
+    }
+    #ojoycont{
+        gap: 29vw;
+    }
+}
+@media(max-width:768px){
+    #terminos{
+        font-size: 0.4rem;
+    }
+    #terminos a{
+        font-size: 0.4rem;
+    }
+    .bienvenido{
+        font-size: 75px;
+    }
+    #ojoycont{
+        gap: 29vw;
+    }
+}
 
+@media(max-width:676px){
+    #terminos{
+        font-size: 0.4rem;
+    }
+    #terminos a{
+        font-size: 0.4rem;
+    }
+    .bienvenido{
+        font-size: 55px;
+    }
+    #ojoycont{
+        gap: 29vw;
+    }
+}
+@media(max-width:642px){
+    #terminos{
+        font-size: 0.35rem;
+    }
+    #terminos a{
+        font-size: 0.35rem;
+    }
+    .bienvenido{
+        font-size: 55px;
+    }
+    #ojoycont{
+        gap: 27vw;
+    }
+}
+@media(max-width:621px){
+    #panelizquierdo{
+        width: 50vw;
+    }
+    #panelderecho{
+        width: 50vw;
+    }
+    #terminos{
+        font-size: 0.35rem;
+    }
+    #terminos a{
+        font-size: 0.35rem;
+    }
+    .bienvenido{
+        font-size: 55px;
+    }
+    #ojoycont{
+        gap: 27vw;
+    }
+}
+
+
+@media(max-width:600px){
+    .bienvenido{
+        font-size: 45px;
+    }
+    label{
+        font-size: 0.6rem;
+    }
+    .input_label a{
+        font-size: 0.5rem;
+    }
+    .iniciar{
+        font-size: 20px;
+    }
+}
