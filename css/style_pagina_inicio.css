@@ -12,6 +12,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+    z-index: 9999;
 }
 
 /* logo encabezado */
@@ -77,10 +78,50 @@ header{
     
 }
 
-#buscar:hover{
+#buscador:hover{
     cursor: pointer;
 }
 
+/* dropdown busqueda */
+
+#search{
+
+    width: 100%;
+    height: 12em;
+    background-color: #ffffff;
+    display: none;
+    z-index: 9999;
+    opacity: 0;
+    transition:  0.5s ease, max-height 0.5s ease;  
+}
+
+#search input{
+    margin: 0 auto;
+    width: 80%;
+    height: 18%;
+    padding: 0.5em;
+    font-size: 20px;
+    border:2px solid  #267E1B;
+    color: #267E1B;
+    background-color: #ffffff;
+    position: relative;
+    top: 51%;
+    left: 10%;
+    outline: none;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* botones */
 #parte_derecha button{
@@ -122,11 +163,15 @@ header{
     
 }
 
+#dropdown:hover{
+    cursor: pointer;
+}
+
 /* seccion_01 */
 
 #seccion_01{
-    width: 100%;
-    height: 45rem;
+    width: 98.4%;
+    height: 40rem;
 }
 
 /* espacio donde ira la informacion*/
@@ -155,7 +200,7 @@ header{
 .cambio_color{
     color: #267E1B;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 70px;
 
 }
 
@@ -170,6 +215,7 @@ header{
     color: white;
     border-radius: 6px;
     font-size: 20px;
+    border: none;
 }
 
 #more_information_btn:hover{
@@ -178,10 +224,14 @@ header{
     background-color: white;
     border: 2px solid #267E1B;
 }
+
+#more_information_btn p{
+    font-size: 26px;
+}
 /* seccion_02 */
 #seccion_02{
     width: 100%;
-    height: 46rem;
+    height: 44.8rem;
 }
 
 #seccion_populares{
@@ -199,6 +249,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
 #contenedor_populares{
@@ -210,18 +261,43 @@ header{
 }
 
 #parte_izquierda_slider{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    width: 60%;
-    padding-left:  2em; 
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-left: 2em;
     padding-right: 2em;
+    position: relative;
+    overflow: hidden;
+    
 }
 
-.visible{
+.carousel-container {
+    overflow: hidden;
+    width: 100%; 
+}
+
+.info_content{
     display: flex;
-    gap: 0.5em;
+    transition: transform 0.7s ease-in-out;
+}
+
+/* sitios a mostrar */
+/* imagenes */
+.visible{
+    /* reparte el espacio en tres y se le asigna a cada objeto con dicha clase */
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
     flex-direction: column;
+    gap: 0.5em;
+}
+
+#parte_izquierda_slider img{
+    width: 17em;
+    height: 25.5em;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .visible h5{
@@ -229,18 +305,50 @@ header{
     font-size: 16px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     font-weight: bolder;
+    margin: 0;
 }
 
 .visible p{
     color: #5c5959;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 0.2em 0;
 }
 
-#parte_izquierda_slider img{
-    width: 18em;
-    height: 26em;
+/* botones slider */
+
+.flecha {
+    font-size: 2em;
+    font-weight: bold;
+    color: #208114;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.621);
+    font-family: Arial, sans-serif;
+  }
+
+#botones_slider{
+    margin-left: 20px;
+    display: flex;
+    gap: 0.2em;
 }
 
+#botones_slider button{
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+}
+
+#botones_slider button:hover:not(.desactivado) {
+    color: #208114;
+}
+
+#botones_slider button.desactivado{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* parte derecha populares */
 #parte_derecha_titulo{
     height: 100%;
     width: 40%;
@@ -254,7 +362,12 @@ header{
 }
 
 #parte_derecha_titulo h1{
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.cambio_color_02{
+    color: #267E1B;
 }
 
 #parte_derecha_titulo p{
@@ -282,48 +395,160 @@ header{
 /* seccion_03 */
 #seccion_03{
     width: 100%;
-    height: 45rem;
+    height: 40rem;
 }
 
 #contenedor_eventos{
     width: 100%;
     height: 100%;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.516), rgba(0, 0, 0, 0.505)),
-    url(../img/Pagina_inicio/Pasadia-termales-de-santa-rosa-de-cabal-y-filandia.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-    text-align: center;
+    position: relative;
 }
 
-#contenedor_eventos h3{
-    font-size: 30px;
+#slide_content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.event{
+position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.event.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.event_1 {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.516), rgba(0,0,0,0.505)),
+      url('../img/Pagina_inicio/Pasadia-termales-de-santa-rosa-de-cabal-y-filandia.webp');
+  }
+  .event_2 {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.516), rgba(0,0,0,0.505)),
+      url('../img/Pagina_inicio/Nevado-del-Tolima-WalterV-1024x683.jpeg');
+  }
+  .event_3 {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.516), rgba(0,0,0,0.505)),
+    url('../img/Pagina_inicio/Pasadia-termales-de-santa-rosa-de-cabal-y-filandia.webp');
+  }
+  .event_4 {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.516), rgba(0,0,0,0.505)),
+      url('../img/Pagina_inicio/Nevado-del-Tolima-WalterV-1024x683.jpeg');
+  }
+  .event_5 {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.516), rgba(0,0,0,0.505)),
+      url('../img/Pagina_inicio/Pasadia-termales-de-santa-rosa-de-cabal-y-filandia.webp');
+  }
+
+.title{
+    position: absolute;
+    top: 7rem;          
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
     text-decoration: underline;
     color: white;
+    z-index: 5;   
 }
 
-#title h1{
-    font-size: 50px;
+.event{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    pointer-events: none;
+}
+
+.event h1{
+    font-size: 70px;
     font-weight: 700;
     color: white;
 }
 
-#more_information_btn3{
-    width: 12em;
-    height: 3.5em;
+.flecha_slider2{
+    font-size: 12em;
+    color: #ffffff;
+    font-family: Arial, sans-serif; 
+    opacity: 0.5;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: .5rem;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: .6rem;
+    height: .6rem;
+    background: rgba(255,255,255,.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: white;
+  }
+
+.more_information_btn3{
+    width: 13em;
+    height: 3.8em;
     background: none;
     border: 3px solid white;
     border-radius: 8px;
     color: white;
 }
 
-#more_information_btn3:hover{
+.more_information_btn3 p{
+    font-size: 16px;
+}
+
+.more_information_btn3:hover{
     cursor: pointer;
     background-color: white;
     color: black;
@@ -332,7 +557,7 @@ header{
 /* seccion_04 */
 #seccion_04{
     width: 100%;
-    height: 45rem;
+    height: 35rem;
 }
 
 #contenedor_seccion{
@@ -345,22 +570,23 @@ header{
 
 #contenedor_seccion h1{
     font-size: 30px;
+    margin-top: 40px;
 
 }
 
 #beneficios{
-    width: 100%;
-    height: 35em;;
+    width: 90%;
+    height: 25em;;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20em;
+    gap: 15em;
     margin-left: 4em;
 }
 
 #beneficios img{
-    width: 82%;
+    width: 73%;
     height: 45%;
 }
 
@@ -403,9 +629,9 @@ header{
     width: 17em;
     height: 3.7em;
     background-color: #3c8428;
-    border-color: #267E1B;
     color: white;
     border-radius: 4px;
+    border: none;
 }
 
 #more_information_btn2:hover{
@@ -495,3 +721,4 @@ header{
     font-size: 0.9em;
     color: #514f4f;
   }
+
