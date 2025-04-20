@@ -21,7 +21,7 @@ header{
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    align-items: center;
+    align-items: center; 
     margin-left: 3em;
 }
 
