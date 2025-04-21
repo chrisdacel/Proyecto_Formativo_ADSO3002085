@@ -22,7 +22,7 @@ header{
     flex-direction: row;
     text-decoration: none;
     align-items: center;
-    margin-left: 3em;
+    margin-left: 0;
 }
 
 #logotipo a{
@@ -46,7 +46,7 @@ header{
 #turista{
     font-size: 0.6rem;
     display: flex;
-    color: #666;
+    color: #444444;
     justify-self: center;
 }
 
@@ -59,7 +59,7 @@ header{
     height: 100%;
     flex-direction: row;
     gap: 1.8em;
-    margin-right: 3em;
+    margin-right: 0;
 }
 
 
@@ -100,7 +100,7 @@ header{
 #dropdown{
     width: 2.5rem;
     height: 3rem;
-    
+    margin: 0;
 }
 
 main{
@@ -127,44 +127,59 @@ main{
 }
 #titulo h1{
     color: #267E1B;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 40px;
     text-align: left;
     
 }
-#ojo{
-    width: 20px;
-    height: 20px;
-}
+
 
 .input_align{
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
-label{
+.textosuperior{
     font-size: 0.8rem;
-    color: #666;
+    color: #444444;
     margin-bottom: 4px;
     text-align: left;
+    display: flex;
+    justify-self: left;
+    align-self: flex-start;
 }
 input{
     width: 35vw;
     height: 40px;
     border-radius: 5px;
     border: solid #666 0.5px;
+    color: #444444;
 }
 
 #ojoycont1{
 display: flex;
 flex-direction: row;
-gap: 400px;
+width: 100%;
+
 }
 #ojoycont2{
     display: flex;
     flex-direction: row;
-    gap: 325px;
+    width: 100%;
+
+    
+}
+.ojo{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: absolute;
+    right: 32vw;
 }
 
 #align_indicaciones{
@@ -192,3 +207,91 @@ border: solid #267E1B 0.5px;
 cursor: pointer;
 
 }
+
+@media (max-height:586px){
+
+    header{
+        height: 3rem;
+    }
+}
+@media(max-width:900px){
+
+#align_indicaciones{
+    font-size: 0.6rem;
+}
+}
+@media(max-width:757px){
+
+    #titulo h1{
+        font-size: 36px;
+    }
+    }
+
+    @media(max-width:681px){
+
+        #titulo h1{
+            font-size: 32px;
+        }
+        #align_indicaciones{
+            font-size: 0.55rem;
+        }
+        input{
+
+            width: 40vw;
+        }
+        .ojo{
+            right: 29vw;
+        }
+        button{
+            width: 40vw;
+        }
+        }
+    @media(max-width:606px){
+        #titulo h1{
+            font-size: 25px;
+        }
+    }
+    @media(max-width:530px){
+        #align_indicaciones{
+            font-size: 0.5rem;
+        }
+        #cuenta{
+            width: 250px;
+            display: none;
+        }
+        #cuenta a{
+            font-size: 10px;
+        }
+        #dropdowm{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    @media(max-width:473px){
+        #titulo h1{
+            font-size: 20px;
+        }
+    }
+    @media(max-width:425px){
+        input{
+            width: 60vw;
+        }
+        .ojo{
+            right: 22vw;
+        }
+        button{
+            width: 
+            60vw;
+        }
+    }
+    @media(max-width:379px){
+        #titulo h1{
+            font-size: 17px;
+        }
+    }
+    @media(max-width:321px){
+        #titulo h1{
+            font-size: 15px;
+        }
+    }
+  
