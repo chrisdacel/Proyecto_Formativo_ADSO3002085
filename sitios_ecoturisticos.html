@@ -13,7 +13,7 @@
         <!-- div que contiene el logo de la empresa con hipervinculo a la pagina principal-->
         <div id="logotipo">
             <!-- imagen de logo -->
-             <a href="Pagina_Inicio.html"><img src="./img/sitios_ecoturisticos/nature-svgrepo-com.svg" alt="Logo empresa" id="logo"></a>
+            <a href="Pagina_Inicio.html"><img src="img/Pagina_inicio/nature-svgrepo-com.svg" alt="Logo empresa" id="logo"></a>
 
             <!-- div de texto de logo -->
             <div>
@@ -22,16 +22,89 @@
             
         </div>
         <!-- parte derecha del encabezado -->
-         <div id="parte_derecha">
-            
-              <!-- botones de inicio de sesion -->
-               <a href="inicio_sesion.html"><button id="register_btn">Registrarse</button></a>
-               <a href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
+        <div id="parte_derecha">
+            <!-- barra de busqueda -->     
+                <div id="buscador">
+                    <img src="img/Pagina_inicio/search-svgrepo-com.svg" alt="Buscar" id="buscar">
+                    <p>Buscar</p>
+                </div>       
+            <!-- botones de inicio de sesion -->
+            <a href="inicio_sesion.html"><button id="register_btn">Registrarse</button></a>
+            <a href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
 
-               <!-- dropdown -->
-                <img src="./img/sitios_ecoturisticos/menu-alt-2-svgrepo-com.png" alt="Menu Desplegable" id="dropdown">
-         </div>
+            <!-- dropdown -->
+                <img src="img/Pagina_inicio/img_drop_down.png" alt="Menu Desplegable" id="dropdown">
+        </div>
+    </header>
+    <div id="search" class="search">
+        <input type="text" placeholder="Escribe tu búsqueda...">
+    </div>
 
-      </header>
+         <!-- footer -->
+    <footer class="footer">
+        <!-- contenedor de footer -->
+        <div class="footer-container">
+            <!-- primera columna del footer -->
+          <div class="footer-col">
+            <!-- titulo -->
+            <h2>Conexion</h2>
+            <p>EcoRisaralda</p>
+            <!-- iconos importados -->
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- selector de lenguaje -->
+            <div class="language-selector">
+              🌐
+              <!-- seleccion -->
+              <select>
+                <option>Español</option>
+                <option>English</option>
+              </select>
+            </div>
+          </div>
+          <!-- columna del footer -->
+          <div class="footer-col">
+            <h4>Información</h4>
+            <!-- lista desordenad -->
+            <ul>
+                <!-- elementos de la lista -->
+              <li><a href="#">Conexión EcoRisaralda</a></li>
+              <li><a href="#">Descripcion</a></li>
+              <li><a href="#">Lema</a></li>
+            </ul>
+          </div>
+          <!-- columna footer -->
+          <div class="footer-col">
+            <h4>Navegación rápida</h4>
+            <!-- lista desordenada -->
+            <ul>
+                <!-- elementos -->
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Políticas</a></li>
+            </ul>
+          </div>
+          <!-- columna footer -->
+          <div class="footer-col">
+            <h4>Contacto y soporte</h4>
+            <!-- lista desordenada -->
+            <ul>
+                <!-- elementos -->
+              <li><a href="mailto:ecorisaralda@contacto.com">ecorisaralda@contacto.com</a></li>
+              <li><a href="#">300 445 80055</a></li>
+              <li><a href="#">Preguntas</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- derechos reservados -->
+        <div class="footer-bottom">
+          <p><em>Conectando viajeros con la naturaleza. Explora, guarda y comparte experiencias únicas.</em></p>
+          <p>© 2025 Conexión EcoRisaralda – Todos los derechos reservados.</p>
+        </div>
+      </footer>
 </body>
 </html>

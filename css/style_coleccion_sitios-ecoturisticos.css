@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/* encabezado */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 9999;
+}
+
+/* logo encabezado */
+#logotipo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 3em;
+}
+
+#logotipo a{
+    text-decoration: none;
+    color: black;
+}
+
+#logotipo a:visited{
+    text-decoration: none;
+}
+
+#logotipo a:hover{
+    color: #558a39;
+
+}
+
+#logo{
+    width: 3rem;
+    height: 4rem;
+}
+
+/* botones interactivos/parte derecha del encabezado*/
+
+#parte_derecha{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    flex-direction: row;
+    gap: 1.8em;
+    margin-right: 3em;
+}
+
+/* barra de busqueda */
+
+#buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#buscador p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#buscar{
+    width: 1.8em;
+    height: 1.5em;
+    margin-right: -5px;
+    
+}
+
+#buscador:hover{
+    cursor: pointer;
+}
+
+/* dropdown busqueda */
+
+#search{
+
+    width: 100%;
+    height: 12em;
+    background-color: #ffffff;
+    display: none;
+    z-index: 9999;
+    opacity: 0;
+    transition:  0.5s ease, max-height 0.5s ease;  
+}
+
+#search input{
+    margin: 0 auto;
+    width: 80%;
+    height: 18%;
+    padding: 0.5em;
+    font-size: 20px;
+    border:2px solid  #267E1B;
+    color: #267E1B;
+    background-color: #ffffff;
+    position: relative;
+    top: 51%;
+    left: 10%;
+    outline: none;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* botones */
+#parte_derecha button{
+    width: 8em;
+    height: 3em;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+#register_btn{
+    background-color: #267E1B;
+    color: white;
+    font-weight: 600;
+}
+
+#register_btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #267E1B;
+}
+
+#loguin_btn{
+    background-color: white;
+    border-color: #267E1B;
+    color: #267E1B;
+    font-weight: 700;
+}
+
+#loguin_btn:hover{
+    background-color: #267E1B;
+    color: white;
+    cursor: pointer;
+
+}
+/* dropdown */
+#dropdown{
+    width: 2.5rem;
+    height: 3rem;
+    
+}
+
+#dropdown:hover{
+    cursor: pointer;
+}
+
+
+/* seccion_01 */
+
+    #seccion_01{
+        width: 100%;
+        height: 40rem;
+        background-color: #ffffff;
+        margin-top: 4.375em;
+
+    }
+
+    #seccion_mejores_destinos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contenedor_mejores_destinos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #parte_izquierda_slider{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: #ffffff;
+        
+    }
+
+    .carousel-container_mejores_destinos {
+        overflow: hidden;
+        width: 100%; 
+    }
+
+    .slider-center-large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* sitios a mostrar */
+    /* imagenes */
+    .slider-center-large .item {
+        display: none;
+        flex-shrink: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        order: 3;
+    }
+
+    .slider-center-large .item.large {
+        display: flex;
+        order: 1;
+        overflow: hidden; 
+        border-radius: 8px; 
+    }
+    
+    .slider-center-large .item.large img {
+        width: 13em;
+        height: 30em;
+        transform: scale(1.1);
+        opacity: 1;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    
+
+        .slider-center-large .item.small-left,
+        .slider-center-large .item.small-right {
+        display: flex;
+        order: var(--order);
+        }
+        .slider-center-large .item.small-left { --order: 0; }
+        .slider-center-large .item.small-right { --order: 2; }
+
+        .slider-center-large .item.small-left img,
+        .slider-center-large .item.small-right img {
+        width: 13em;
+        height: 30em;
+        transform: scale(0.8);
+        opacity: 1;
+        border-radius: 8px;
+        object-fit: cover;
+        }
+
+/* parte derecha populares */
+#parte_derecha_titulo{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-right:2em ;
+    background-color: #ffffff;
+}
+
+.titulos_mejores_sitios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#parte_derecha_titulo h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.buscar{
+    position: relative;
+}
+
+.buscar input{
+    width: 30em;
+    height: 3em;
+    padding: 6px;
+    border: 2px solid #267E1B;
+    border-radius: 50px;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.lupe {
+    width: 2em;
+    height: 2em;
+    background: none;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+#seccion_mejores_destinos .item h5,
+#seccion_mejores_destinos .item p {
+  display: none;
+}
+
+
+/* fin seccion_01 */
+
+
+
+/* seccion_02 */
+
+#seccion_02{
+    width: 100%;
+    
+}
+
+/* sliders */
+
+.slider{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+.contenedor_carrusel{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.contenedor_items{
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.visible a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visible:hover{
+    text-decoration: underline;
+}
+/* flechas */
+.flecha {
+    font-size: 3em;
+    font-weight: bold;
+    color: #208114;
+    font-family: Arial, sans-serif;
+}
+
+.atras_btn{
+    position: absolute;
+    left: 3.5%;
+    top: 35%;
+
+}
+
+.adelante_btn{
+    position: absolute;
+    right: 3.5%;
+    top: 35%;
+}
+
+.slider button{
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+
+}
+
+.slider:hover:not(.desactivado) {
+    color: #249715;
+}
+
+.slider button.desactivado{
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* imagenes */
+
+.visible{
+    min-width: calc(100% / 4);
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.visible img{
+    width: 20em;
+    height: 13em;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.visible h5{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.visible p{
+    color: #5c5959;
+    margin: 0.2em 0;
+}
+
+/* fin seccion_02 */
+
+
+
+/* seccion_03 */
+#seccion_03{
+    width: 100%;
+    height: 35rem;
+    background-color: #ffffff;
+    
+}
+
+#contenedor_recomendaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    position: relative;
+}
+
+#contenedor_recomendaciones h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.imagenes img{
+    width: 18em;
+    height: 25em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pack_01{
+    top: 50%;
+    left: 7.45%;
+}
+
+.pack_02{
+    top: 50%;
+    left: 29.5%;
+}
+
+.pack_03{
+    top: 50%;
+    left: 51.6%;
+}
+
+.pack_04{
+    top: 50%;
+    left: 73.7%;
+}
+
+.pack{
+    width: 18em;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.pack h5{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow:0 4px 12px rgba(0, 0, 0, 0.748) ;
+    
+}
+
+.pack p{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow:0 4px 12px rgba(0, 0, 0, 0.748) ;
+    
+}
+
+.pack:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #00000061;
+}
+
+/* fin seccion_03 */
+
+
+
+/* Pie de Pagina */
+.footer {
+    border-top:1px solid #267E1B;
+    background-color: #e4e4e4e6;
+    color: hsl(0, 0%, 33%);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-col {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  
+  .footer-col h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .footer-col h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-col p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .footer-col ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #4caf50;
+  }
+  
+  .language-selector {
+    margin-top: 10px;
+    
+  }
+  
+  .language-selector select {
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 7px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #514f4f;
+  }
+
