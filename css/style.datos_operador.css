@@ -22,7 +22,7 @@ header{
     flex-direction: row;
     text-decoration: none;
     align-items: center;
-    margin-left: 3em;
+    margin-left: 0;
 }
 
 #logotipo a{
@@ -59,7 +59,7 @@ header{
     height: 100%;
     flex-direction: row;
     gap: 1.8em;
-    margin-right: 3em;
+    margin-right: 0;
 }
 
 
@@ -110,7 +110,7 @@ main{
     height: 100vh;
     justify-content: center;
     align-items: center;    
-    gap: 20px;
+    gap: 14px;
     
 }
 #titulo{
@@ -240,3 +240,302 @@ cursor: pointer;
 
 }
 
+@media(max-width:1399px){
+    #align_date{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    #mes{
+        width: 18vw;
+    }
+    #dia{
+        width: 8.2vw;
+    }
+    #anio{
+        width: 8.2vw;
+    }
+}
+@media(max-width:1242px){
+    #titulo h1{
+        font-size: 27px;
+    }
+}
+@media(max-width:1118px){
+    #titulo h1{
+        font-size: 25px;
+    }
+}
+@media(max-width:1035px){
+    #titulo h1{
+        font-size: 24px;
+    }
+}
+@media(max-width:994px){
+    #titulo h1{
+        font-size: 23px;
+    }
+}
+@media(max-width:952px){
+    #titulo h1{
+        font-size: 22px;
+    }
+}
+@media(max-width:911px){
+    #titulo h1{
+        font-size: 21.5px;
+    }
+}
+@media(max-width:890px){
+    #titulo h1{
+        font-size: 21px;
+    }
+}
+@media(max-width:870px){
+    #titulo h1{
+        font-size: 20px;
+    }
+}
+@media(max-width:828px){
+    #titulo h1{
+        font-size: 19px;
+    }
+    .terminos{
+        font-size: 0.55rem;
+    }
+}
+@media(max-width:787px){
+    #titulo h1{
+        font-size: 18.5px;
+    }
+    .terminos{
+        font-size: 0.55rem;
+    }
+}
+@media(max-width:768px){
+    #titulo h1{
+        font-size: 15px;
+    }
+    .terminos_container{
+        justify-content: first baseline;
+        align-items: first baseline;
+        width: 55vw;
+
+       
+    }
+
+    .terminos{
+        font-size: 0.55rem;
+    }
+  
+    input{
+        width: 50vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    #align_date{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+    
+    #mes{
+        width: 30vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    #dia{
+        width: 10vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    #anio{
+        width: 10vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    select{
+        width: 51vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    button{
+        width: 50vw;
+        height: 35px;
+    }
+    .terminos{
+        font-size: 0.7rem;
+    }
+     }
+    #titulo a {
+        font-size: 0.6rem;
+    }
+    label{
+        font-size: 0.6rem;
+    }
+
+    @media(max-width:704px){
+        .terminos_container{
+            width: 60vw;
+        }
+
+    }
+    @media(max-width:647px){
+        .terminos_container{
+            width: 63vw;
+        }
+
+    }
+
+@media(max-width:621px){
+    #titulo h1{
+        font-size: 14px;
+    }
+    #titulo a {
+        font-size: 0.6rem;
+    }
+    label{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width:585px){
+    #titulo h1{
+        font-size:13px ;
+
+    }
+    .terminos{
+        font-size: 0.7rem;
+        
+    }
+    #titulo{
+        width: 43%;
+    }
+}
+@media(max-width:616px){
+    .terminos_container{
+        width: 65vw;
+    }
+
+}
+@media(max-width:597px){
+    .terminos_container{
+        width: 68vw;
+    }
+
+}
+@media(max-width:571px){
+    .terminos{
+        font-size: 0.5rem;
+    }
+
+}
+@media(max-width:490px){
+    .terminos{
+        font-size: 0.5rem;
+    }
+    #align_date{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+    
+    #mes{
+        width: 29.5 vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    #dia{
+        width: 9.5vw;
+        height: 35px;
+        font-size: 13px;
+    }
+    #anio{
+        width: 9.5vw;
+        height: 35px;
+        font-size: 13px;
+    }
+
+}
+@media(max-width:451px){
+    #titulo{
+        width: 46%;
+    }
+}
+@media(max-width:425px){
+    #titulo{
+        width: 46%;
+    }
+    input{
+        width: 60vw;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    #align_date{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+    
+    #mes{
+        width: 33vw;
+        height: 35px;
+        font-size: 0.7rem;
+
+    }
+    #dia{
+        width: 13vw;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    #anio{
+        width: 13vw;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    select{
+        width: 61vw;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    button{
+        width: 60vw;
+    }
+  
+    #parte_derecha button{
+        width:10em ;
+    }
+ 
+}
+@media(max-width:422px){
+    #titulo{
+       
+        width: 52%;
+    }
+    .terminos_container{
+        margin-left: 20%;
+    }
+    .terminos{
+        font-size: 0.43rem;
+    }
+}
+@media(max-width:375px){
+#titulo{
+    width: 62%;
+}
+.terminos{
+    font-size: 0.4rem;
+}    
+#parte_derecha button{
+    width:8em ;
+}
+}
+@media(max-width:341px){
+    .terminos_container{
+        width: 72vw;
+    }
+    #caja{
+        width: 10px;
+        height: 10px;
+    }
+}
