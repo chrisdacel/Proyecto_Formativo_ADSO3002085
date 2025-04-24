@@ -25,13 +25,18 @@
         <div id="parte_derecha">
             <!-- barra de busqueda -->     
             <!-- botones de inicio de sesion -->
-            <a href="register_turista.html"><button id="register_btn">Registrarse</button></a>
-            <a href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
+            <a class="button_header"  href="register_turista.html"><button id="register_btn">Registrarse</button></a>
+            <a class="button_header"  href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
 
             <!-- dropdown -->
-                <img src="img/Pagina_inicio/img_drop_down.png" alt="Menu Desplegable" id="dropdown">
+            <!-- <div class="contenido_dropdown">
+
+            </div> -->
+            <img src="img/Pagina_inicio/img_drop_down.png" alt="Menu Desplegable" id="dropdown">
         </div>
     </header>
+    <!-- boton para regresar a la pagina de inicio -->
+    <button id="botonArriba" title="Volver arriba"><img src="img/Coleccion_sitios_ecoturisticos/arrow-up2.svg" alt=""></button>
     <main>
 
         <section id="seccion_01">
@@ -370,44 +375,57 @@
         <section id="seccion_03">
 
             <div id="contenedor_recomendaciones">
-                <h1>Recomendaciones</h1>
+                <h1 class="title_recomendations">Recomendaciones</h1>
                 <div class="imagenes">
-                    <img src="img/Coleccion_sitios_ecoturisticos/paisaje_01.jpeg" alt="">
-                    <div class="pack pack_01">
-                    <div >
-                        <h5>Parque Nacional </h5>
-                            <h5>Natural Los Nevados</h5>
-                            </div>
-                            <!-- Direccion -->
-                            <p>Municipio de Santa Rosa de Cabal</p>
+
+                    <div class="card">
+                        <a href="sitios.html">   
+                        <img src="img/Coleccion_sitios_ecoturisticos/paisaje_01.jpeg" alt="imagen sitio turistico">
+                        <div class="info">
+                                <div class="info_details">
+                                    <h4>Termales</h4>
+                                    <p>Santa Rosa de Cabal</p>
+                                </div>
+                        </div>    
+                        </a>
                     </div>
-                    <img src="img/Coleccion_sitios_ecoturisticos/paisaje_02.jpeg" alt="">
-                    <div class="pack pack_02">
-                        <div >
-                            <h5>Parque Nacional </h5>
-                                <h5>Natural Los Nevados</h5>
+                        
+                    <div class="card">
+                        <a href="sitios.html">   
+                        <img src="img/Coleccion_sitios_ecoturisticos/paisaje_02.jpeg" alt="imagen sitio turistico">
+                        <div class="info">
+                                <div class="info_details">
+                                    <h4>Parque Natural</h4>
+                                    <p>Via Virginia Pereira</p>
                                 </div>
-                                <!-- Direccion -->
-                                <p>Municipio de Santa Rosa de Cabal</p>
                         </div>
-                    <img src="img/Coleccion_sitios_ecoturisticos/paisaje_03.jpeg" alt="">
-                    <div class="pack pack_03">
-                        <div >
-                            <h5>Parque Nacional </h5>
-                                <h5>Natural Los Nevados</h5>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="sitios.html">   
+                        <img src="img/Coleccion_sitios_ecoturisticos/paisaje_03.jpeg" alt="imagen sitio turistico">
+                        <div class="info">
+                                <div class="info_details">
+                                    <h4>Parque Natural</h4>
+                                    <p>Via Quimbaya</p>
                                 </div>
-                                <!-- Direccion -->
-                                <p>Municipio de Santa Rosa de Cabal</p>
                         </div>
-                    <img src="img/Coleccion_sitios_ecoturisticos/Nevado-del-Tolima-WalterV-1024x683.jpeg" alt="">
-                    <div class="pack pack_04">
-                        <div >
-                            <h5>Parque Nacional </h5>
-                                <h5>Natural Los Nevados</h5>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="sitios.html">   
+                        <img src="img/Coleccion_sitios_ecoturisticos/Nevado-del-Tolima-WalterV-1024x683.jpeg" alt="imagen sitio turistico">
+                        <div class="info">
+                                <div class="info_details">
+                                    <h4>Parque Natural</h4>
+                                    <p>Via Virginia Pereira</p>
                                 </div>
-                                <!-- Direccion -->
-                                <p>Municipio de Santa Rosa de Cabal</p>
                         </div>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
