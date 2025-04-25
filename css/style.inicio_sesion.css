@@ -367,6 +367,7 @@ a{
     }
     label{
         font-size: 0.6rem;
+        margin-bottom: 1px;
     }
     .input_label a{
         font-size: 0.5rem;
@@ -374,4 +375,59 @@ a{
     .iniciar{
         font-size: 20px;
     }
+}
+
+@media(max-width:560px){
+    #ojoycont{
+        gap: 30vw;
+    }
+}
+@media(max-width:522px){
+    #ojoycont{
+        gap: 28vw;
+        
+    }
+    label{
+        margin-left: 12px;
+    }
+    .olvidar{
+        margin-left: 10px;
+    }
+    
+}
+@media(max-width:475px){
+    .bienvenido{
+        font-size: 30px;
+    }
+    #terminos{font-size: 0.3rem;
+    width: 100%;
+    }
+    #terminos a{
+        font-size: 0.3rem;
+    }
+
+}
+@media(max-width:412px){
+    .bienvenido{
+        font-size: 25px;
+    }
+    #terminos{font-size: 0.2rem;
+    width: 100%;
+    margin-left: 40px;
+    }
+    #terminos a{
+        font-size: 0.2rem;
+    }
+    #ojoycont{
+        gap: 22vw;
+    }
+  #contraseña{
+    font-size: 0.7rem;
+  }
+  #correo{
+    font-size: 0.7rem;
+    
+  }
+  
+
 }
