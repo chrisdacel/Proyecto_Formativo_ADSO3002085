@@ -1,6 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Albert sans', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 header{
     width: 100vw;
@@ -10,10 +19,10 @@ header{
 }
 header h1{
     color: #267E1B;
-    font-family: 'Albert sans', sans-serif;
+    
     margin-top: 40px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bolder;
 
 }
 #main_conteiner{
@@ -120,11 +129,11 @@ font-family: 'Albert sans', sans-serif;
 font-weight: 800;
 width: 90px;
 height: 30px;
-margin-bottom: 25px;
+margin-bottom: 4.3vh;
 transition: ease-in-out 0.3s;
 }
 #omitir{
-margin-right: 150px;
+margin-right: 6vw;
 font-family: 'Albert sans', sans-serif;
 width: 90px;
 height: 30px;
@@ -132,7 +141,7 @@ font-weight: 800;
 color: #666;
 background-color: white;
 border: none;
-margin-bottom: 25px;
+margin-bottom: 4.3vh;
 transition: ease-in-out 0.5s;
 }
 
@@ -146,5 +155,110 @@ border: solid white 0.5px;
 cursor: pointer;
 border-radius: 5px;
 border: solid #666 0.5px;
+
+}
+
+@media(max-width:1200px){
+    #omitir{
+        margin-right: 0.5vw;
+    }
+}
+@media(max-width:1115px){
+    .activity_img{
+        width: 125px;
+        height: 125px;
+    }
+    .activity_containers{
+        width: 110px;
+        height: 110px;
+    }
+    header h1{
+        
+        font-size: 37px;
+        
+    
+    }
+    #first_row{
+       
+        gap: 175px;
+        
+        }
+        #second_row{
+           
+        gap: 175px;
+        
+        }
+}
+@media(max-width:996px){
+    #first_row{
+       
+        gap: 150px;
+        
+        }
+        #second_row{
+           
+        gap: 150px;
+        
+        }
+}
+@media(max-width:917px){
+    #first_row{
+       
+        gap: 125px;
+        
+        }
+        #second_row{
+           
+        gap: 125px;
+        
+        }
+        .activity_img{
+            width: 115px;
+            height: 115px;
+        }
+        .activity_containers{
+            width: 100px;
+            height: 100px;
+        }
+        header h1{
+            
+            font-size: 35px;
+            
+        
+        }
+}
+@media(max-width:800px){
+    #first_row{
+       
+        gap: 115px;
+        
+        }
+        #second_row{
+           
+        gap: 115px;
+        
+        }
+
+}
+@media(max-width:768px){
+   
+    #main_conteiner{
+
+        
+        flex-direction:row;
+       
+        
+    }
+    
+    #first_row{
+        
+        flex-direction: column;
+        
+        }
+    #second_row{
+        flex-direction: column;
+       
+        }
+       
 
 }
