@@ -1,3 +1,22 @@
+// dropdown/menu hamburguesa
+
+const toggleBtn = document.getElementById('img_dropdown');
+  const menu = document.querySelector('.dropdown-info');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  // Cierra el menú al hacer clic fuera
+  document.addEventListener('click', function(event) {
+    if (!toggleBtn.contains(event.target) && !menu.contains(event.target)) {
+      menu.classList.remove('show');
+    }
+  });
+  
+// fin dropdown/menu hamburguesa
+
+
 // Dropdown Busqueda
 // se le da valor al elemento buscador y al input
 const search = document.getElementById('buscador');

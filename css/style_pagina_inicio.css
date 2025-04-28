@@ -127,7 +127,7 @@ header{
   }
 
 /* botones */
-#parte_derecha button{
+#register_btn,#loguin_btn{
     width: 8em;
     height: 3em;
     border: 1px solid;
@@ -159,16 +159,142 @@ header{
     cursor: pointer;
 
 }
-/* dropdown/meni hamburguesa */
-#dropdown{
+/* dropdown/menu hamburguesa */
+
+
+.dropdown {
+position: relative;
+}
+
+.dropdown img{
     width: 2.5rem;
     height: 3rem;
     
 }
 
-#dropdown:hover{
+.dropdown img:hover{
     cursor: pointer;
 }
+
+
+.dropdown-info {
+    position: absolute;
+    top: 112.3%;
+    left: -16.52em;
+    width: 20em;
+    height: auto;
+    display: none;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: none;
+    padding: 1em;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.315);
+}
+
+.dropdown-item{
+    width: 100%;
+    height: 3em;
+    display: block;
+    color: #267E1B;
+    cursor: pointer;
+    margin-top: 1em;
+    border: 2px solid #267E1B;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.link_btn_responsive{
+    text-decoration: none;
+}
+
+.dropdown-item p{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.dropdown-item:hover {
+    background-color: #267E1B;
+    color: #ffffff;
+    border:2px solid #267E1B;
+}
+
+#botones_responsive{
+    width: 100%;
+    margin-top: 1em;
+    display: none;
+}
+
+#botones_responsive button{
+    width: 10.5em;
+}
+
+#loguin_btn_dropdown{
+    background-color: white;
+    border-color: #267E1B;
+    color: #267E1B;
+    font-weight: 700;
+    margin-left: 11%;
+    width: 8em;
+    height: 3em;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+#loguin_btn_dropdown:hover{
+    background-color: #267E1B;
+    color: white;
+    cursor: pointer;
+
+}
+
+#register_btn_dropdown{
+    width: 8em;
+    height: 3em;
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: #267E1B;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1em ;
+}
+
+#register_btn_dropdown:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #267E1B;
+}
+
+.show {
+display: block;
+}
+
+/* responsive dropdown/menu hamburguesa */
+@media (max-width:767px){
+    .dropdown-info{
+        width: 10em;
+        left: -9em;
+    }
+
+    #botones_responsive{
+        display: block;
+    }
+
+    #botones_responsive button{
+        width: 100%;
+    }
+
+    #botones_responsive button p{
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    #loguin_btn_dropdown{
+        margin-left:0 ;
+    }
+}
+/* fin drodown/menu hamburguesa */
+
 
 /* responsive header */
 @media (max-width:1023px){
