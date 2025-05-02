@@ -1,3 +1,22 @@
+// dropdown/menu hamburguesa
+
+const toggleBtn = document.getElementById('img_dropdown');
+  const menu = document.querySelector('.dropdown-info');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  // Cierra el menú al hacer clic fuera
+  document.addEventListener('click', function(event) {
+    if (!toggleBtn.contains(event.target) && !menu.contains(event.target)) {
+      menu.classList.remove('show');
+    }
+  });
+  
+// fin dropdown/menu hamburguesa
+
+
 // flecha de regreso
 
 // se le agrega a la pagina un evento cuando se hace scroll

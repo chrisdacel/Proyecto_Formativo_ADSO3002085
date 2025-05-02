@@ -175,7 +175,7 @@ a{
     
     font-size: 0.6rem;
     color: #444444;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
    
     font-family:'Albert sans', sans-serif;
@@ -216,8 +216,10 @@ a{
     transition: ease-in-out 0.3s;
 }
 #ingresar:hover{
-    background-color: rgb(30, 201, 30);
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
+    color: #267E1B;
+    border: 2px solid #267E1B;
     
 }
 #a_ingresar{

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- header -->
     <header class="header">
         <!-- div que contiene el logo de la empresa con hipervinculo a la pagina principal-->
         <div id="logotipo">
@@ -23,20 +24,31 @@
         </div>
         <!-- parte derecha del encabezado -->
         <div id="parte_derecha">
-            <!-- barra de busqueda -->     
+            <!-- barra de busqueda -->         
             <!-- botones de inicio de sesion -->
-            <a class="button_header"  href="register_turista.html"><button id="register_btn">Registrarse</button></a>
-            <a class="button_header"  href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
+            <a class="btn_register_navbar" href="./roles.html"><button id="register_btn">Registrarse</button></a>
+            <a class="btn_register_navbar" href="inicio_sesion.html"><button id="loguin_btn">Iniciar Sesion</button></a>
 
             <!-- dropdown -->
-            <!-- <div class="contenido_dropdown">
-
-            </div> -->
-            <img src="img/Pagina_inicio/img_drop_down.png" alt="Menu Desplegable" id="dropdown">
+            <div class="dropdown">
+                    <img src="img/Pagina_inicio/img_drop_down.png" alt="Menú" id="img_dropdown">
+                <div class="dropdown-info">
+                  <a class="link_btn_responsive" href="Pagina_Inicio.html"><button class="dropdown-item" ><p>Inicio</p></button></a>
+                  <a class="link_btn_responsive" href="Coleccion_sitios_ecoturisticos.html"><button class="dropdown-item"><p>Coleccion</p></button></a>
+                  <a class="link_btn_responsive" href="sobre_nosotros.html"><button class="dropdown-item"><p>Acerca Nosotros</p></button></a>
+                  <div id="botones_responsive">
+                    <a class="btn_register_dropdown" href="./roles.html"><button id="register_btn_dropdown"><p>Registrarse</p></button></a>
+                    <a class="btn_register_dropdown" href="inicio_sesion.html"><button id="loguin_btn_dropdown"><p>Iniciar Sesion</p></button></a>
+                  </div>
+                </div>
+              </div>
+                
         </div>
     </header>
+
     <!-- boton para regresar a la pagina de inicio -->
     <button id="botonArriba" title="Volver arriba"><img src="img/Coleccion_sitios_ecoturisticos/arrow-up2.svg" alt=""></button>
+
     <main>
 
         <section id="seccion_01">
@@ -433,72 +445,72 @@
         </section>
     </main>
 
-    <!-- footer -->
-    <footer class="footer">
-        <!-- contenedor de footer -->
-        <div class="footer-container">
-            <!-- primera columna del footer -->
-          <div class="footer-col">
-            <!-- titulo -->
-            <h2>Conexion</h2>
-            <p>EcoRisaralda</p>
-            <!-- iconos importados -->
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+        <!-- footer -->
+        <footer class="footer">
+            <!-- contenedor de footer -->
+            <div class="footer-container">
+                <!-- primera columna del footer -->
+              <div class="footer-col">
+                <!-- titulo -->
+                <h2>Conexion</h2>
+                <p>EcoRisaralda</p>
+                <!-- iconos importados -->
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- selector de lenguaje -->
+                <div class="language-selector">
+                  🌐
+                  <!-- seleccion -->
+                  <select>
+                    <option>Español</option>
+                    <option>English</option>
+                  </select>
+                </div>
+              </div>
+              <!-- columna del footer -->
+              <div class="footer-col">
+                <h4>Información</h4>
+                <!-- lista desordenad -->
+                <ul>
+                    <!-- elementos de la lista -->
+                  <li><a href="Pagina_Inicio.html">Conexión EcoRisaralda</a></li>
+                  <li><a href="Pagina_Inicio.html">Descripcion</a></li>
+                  <li><a href="Pagina_Inicio.html">Lema</a></li>
+                </ul>
+              </div>
+              <!-- columna footer -->
+              <div class="footer-col">
+                <h4>Navegación rápida</h4>
+                <!-- lista desordenada -->
+                <ul>
+                    <!-- elementos -->
+                    <li><a href="Pagina_Inicio.html">Inicio</a></li>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="politicas_privacidad.html">Políticas</a></li>
+                </ul>
+              </div>
+              <!-- columna footer -->
+              <div class="footer-col">
+                <h4>Contacto y soporte</h4>
+                <!-- lista desordenada -->
+                <ul>
+                    <!-- elementos -->
+                  <li><a href="mailto:ecorisaralda@contacto.com">ecorisaralda@contacto.com</a></li>
+                  <li><a href="#">300 445 80055</a></li>
+                  <li><a href="#">Preguntas</a></li>
+                </ul>
+              </div>
             </div>
-            <!-- selector de lenguaje -->
-            <div class="language-selector">
-              🌐
-              <!-- seleccion -->
-              <select>
-                <option>Español</option>
-                <option>English</option>
-              </select>
+            <!-- derechos reservados -->
+            <div class="footer-bottom">
+              <p><em>Conectando viajeros con la naturaleza. Explora, guarda y comparte experiencias únicas.</em></p>
+              <p>© 2025 Conexión EcoRisaralda – Todos los derechos reservados.</p>
             </div>
-          </div>
-          <!-- columna del footer -->
-          <div class="footer-col">
-            <h4>Información</h4>
-            <!-- lista desordenad -->
-            <ul>
-                <!-- elementos de la lista -->
-              <li><a href="#">Conexión EcoRisaralda</a></li>
-              <li><a href="#">Descripcion</a></li>
-              <li><a href="#">Lema</a></li>
-            </ul>
-          </div>
-          <!-- columna footer -->
-          <div class="footer-col">
-            <h4>Navegación rápida</h4>
-            <!-- lista desordenada -->
-            <ul>
-                <!-- elementos -->
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Políticas</a></li>
-            </ul>
-          </div>
-          <!-- columna footer -->
-          <div class="footer-col">
-            <h4>Contacto y soporte</h4>
-            <!-- lista desordenada -->
-            <ul>
-                <!-- elementos -->
-              <li><a href="mailto:ecorisaralda@contacto.com">ecorisaralda@contacto.com</a></li>
-              <li><a href="#">300 445 80055</a></li>
-              <li><a href="#">Preguntas</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- derechos reservados -->
-        <div class="footer-bottom">
-          <p><em>Conectando viajeros con la naturaleza. Explora, guarda y comparte experiencias únicas.</em></p>
-          <p>© 2025 Conexión EcoRisaralda – Todos los derechos reservados.</p>
-        </div>
-      </footer>
+          </footer>
       <script type="text/javascript" src="js/main_coleccion_sitios_ecoturisticos.js"></script>
 </body>
 </html>
