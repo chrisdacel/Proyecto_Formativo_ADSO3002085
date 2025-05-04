@@ -232,7 +232,7 @@ main{
 }
 
 #seccion1{
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -285,6 +285,7 @@ color: #000000;
 }
 /**secciónes**/
 #seccion2{
+    width: 95%;
     margin-top:20vh;
     display: flex;
     flex-direction: column;
@@ -293,6 +294,7 @@ color: #000000;
     gap: 35px;
 }
 #seccion3{
+    width: 95%;
     margin-top:10vh;
     display: flex;
     flex-direction: column;
@@ -301,6 +303,7 @@ color: #000000;
     gap: 35px;
 }
 #seccion4{
+    width: 95%;
     margin-top:10vh;
     display: flex;
     flex-direction: column;
@@ -317,6 +320,7 @@ color: #000000;
     gap: 35px;
 }
 #seccion6{
+    width: 95%;
     margin-top:10vh;
     display: flex;
     flex-direction: column;
@@ -325,6 +329,7 @@ color: #000000;
     gap: 35px;
 }
 #seccion7{
+    width: 95%;
     margin-top:10vh;
     display: flex;
     flex-direction: column;
@@ -339,7 +344,7 @@ color: #000000;
 }
 .imgsection{
     width: 100%;
-    height: 250px;
+    height: 65vh;
     display: flex;
     justify-self: center;
     align-self: center;
